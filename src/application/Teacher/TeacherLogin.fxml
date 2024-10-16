@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherLoginController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="237.0" layoutY="56.0" prefHeight="43.0" prefWidth="126.0" text="Please Login" textFill="#15ae40">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="textId" layoutX="212.0" layoutY="135.0" prefHeight="25.0" prefWidth="176.0" promptText="Enter Login ID" />
+      <Label layoutX="104.0" layoutY="135.0" prefHeight="25.0" prefWidth="92.0" text="ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="9.0" />
+         </padding>
+      </Label>
+      <PasswordField fx:id="textPassword" layoutX="212.0" layoutY="206.0" prefHeight="25.0" prefWidth="176.0" promptText="Enter Password" />
+      <Label layoutX="111.0" layoutY="206.0" prefHeight="25.0" prefWidth="67.0" text="Password">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="249.0" layoutY="269.0" mnemonicParsing="false" onAction="#authUser" prefHeight="25.0" prefWidth="92.0" text="Login">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

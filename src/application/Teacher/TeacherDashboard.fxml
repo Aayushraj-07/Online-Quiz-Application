@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherDashboardController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="62.0" layoutY="115.0" mnemonicParsing="false" onAction="#addQuestions" prefHeight="35.0" prefWidth="116.0" text="Add Questions" />
+      <Button layoutX="62.0" layoutY="200.0" mnemonicParsing="false" onAction="#editQuestions" prefHeight="35.0" prefWidth="116.0" text="Edit Questinos" />
+      <Line endX="100.0" layoutX="243.0" layoutY="234.0" rotate="90.0" scaleX="1.6" startX="-100.0" stroke="#0bff60" strokeWidth="5.0" />
+      <Button layoutX="381.0" layoutY="115.0" mnemonicParsing="false" onAction="#addStudents" prefHeight="35.0" prefWidth="116.0" text="Add Students" />
+      <Button layoutX="387.0" layoutY="293.0" mnemonicParsing="false" onAction="#removeStudents" prefHeight="35.0" prefWidth="116.0" text="Remove Students" />
+      <Button layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onAction="#sendMail" prefHeight="35.0" prefWidth="116.0" text="Mail Students" />
+      <Button layoutX="470.0" layoutY="200.0" mnemonicParsing="false" onAction="#sendResult" prefHeight="35.0" prefWidth="116.0" text="Send Result" />
+      <Button layoutX="62.0" layoutY="293.0" mnemonicParsing="false" onAction="#setDetails" prefHeight="35.0" prefWidth="116.0" text="Add quiz Details" />
+   </children>
+</Pane>

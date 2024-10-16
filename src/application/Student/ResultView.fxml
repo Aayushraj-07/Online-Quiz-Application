@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ResultViewController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="resultImage" fitHeight="147.0" fitWidth="196.0" layoutX="197.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="scoreLabel" layoutX="169.0" layoutY="212.0" prefHeight="39.0" prefWidth="253.0" text="Label" />
+      <Label fx:id="totalLabel" layoutX="169.0" layoutY="264.0" prefHeight="39.0" prefWidth="253.0" text="Label" />
+      <Label fx:id="tQueLabel" layoutX="169.0" layoutY="320.0" prefHeight="39.0" prefWidth="253.0" text="Label" />
+   </children>
+</Pane>

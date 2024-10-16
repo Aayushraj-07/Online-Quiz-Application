@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizViewController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="textQuestion" alignment="TOP_LEFT" focusTraversable="false" layoutX="37.0" layoutY="75.0" prefHeight="71.0" prefWidth="519.0" stylesheets="@application.css" text="Question" textFill="#ee0303" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <RadioButton fx:id="rba" focusTraversable="false" layoutX="37.0" layoutY="162.0" mnemonicParsing="false" onMouseReleased="#rbClicked" prefHeight="17.0" prefWidth="519.0" text="option 1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="rbb" focusTraversable="false" layoutX="37.0" layoutY="192.0" mnemonicParsing="false" onMouseReleased="#rbClicked" prefHeight="17.0" prefWidth="519.0" text="option 2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="rbc" focusTraversable="false" layoutX="37.0" layoutY="226.0" mnemonicParsing="false" onMouseReleased="#rbClicked" prefHeight="17.0" prefWidth="519.0" text="option 3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="rbd" focusTraversable="false" layoutX="37.0" layoutY="257.0" mnemonicParsing="false" onMouseReleased="#rbClicked" prefHeight="17.0" prefWidth="519.0" text="option 4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <Button fx:id="bNext" focusTraversable="false" layoutX="238.0" layoutY="341.0" mnemonicParsing="false" onAction="#goNext" prefHeight="25.0" prefWidth="62.0" text="Next">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="bBack" focusTraversable="false" layoutX="54.0" layoutY="341.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="62.0" stylesheets="@application.css" text="back" />
+      <HBox fx:id="timerBox" layoutX="356.0" layoutY="25.0" prefHeight="34.0" prefWidth="185.0" />
+   </children>
+</Pane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SendMailController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="60.0" layoutY="62.0" prefHeight="25.0" prefWidth="74.0" text="Subject">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="142.0" prefHeight="25.0" prefWidth="74.0" text="Body">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="subjectText" alignment="TOP_LEFT" layoutX="160.0" layoutY="53.0" prefHeight="44.0" prefWidth="393.0" promptText="subject">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="bodyText" alignment="TOP_LEFT" layoutX="160.0" layoutY="116.0" prefHeight="145.0" prefWidth="393.0" promptText="body">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="sendButton" layoutX="232.0" layoutY="279.0" mnemonicParsing="false" onAction="#sendEmail" prefHeight="36.0" prefWidth="121.0" text="Send">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="dashButton" layoutX="233.0" layoutY="346.0" mnemonicParsing="false" onAction="#goDashboard" prefHeight="25.0" prefWidth="121.0" text="Dashboard" />
+      <Button layoutX="418.0" layoutY="346.0" mnemonicParsing="false" onAction="#resetAll" prefHeight="25.0" prefWidth="121.0" text="Reset" />
+   </children>
+</Pane>

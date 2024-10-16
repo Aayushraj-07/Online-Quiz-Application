@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddQuestionsController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="questionText" alignment="TOP_LEFT" layoutX="128.0" layoutY="55.0" prefHeight="65.0" prefWidth="452.0" promptText="Enter Questions">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="69.0" prefHeight="37.0" prefWidth="85.0" text="Question">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="oneText" layoutX="128.0" layoutY="142.0" prefHeight="31.0" prefWidth="452.0" promptText="option 1" />
+      <TextField fx:id="twoText" layoutX="128.0" layoutY="193.0" prefHeight="31.0" prefWidth="452.0" promptText="option 2" />
+      <TextField fx:id="threeText" layoutX="128.0" layoutY="247.0" prefHeight="31.0" prefWidth="452.0" promptText="option 3" />
+      <TextField fx:id="fourText" layoutX="128.0" layoutY="296.0" prefHeight="31.0" prefWidth="452.0" promptText="option 4" />
+      <Label layoutX="23.0" layoutY="139.0" prefHeight="37.0" prefWidth="85.0" text="Option 1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="190.0" prefHeight="37.0" prefWidth="85.0" text="Option 2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="244.0" prefHeight="37.0" prefWidth="85.0" text="Option 3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="293.0" prefHeight="37.0" prefWidth="85.0" text="Option 4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="128.0" layoutY="408.0" mnemonicParsing="false" onAction="#addQuestion" prefHeight="25.0" prefWidth="54.0" text="Add" />
+      <Label layoutX="23.0" layoutY="348.0" prefHeight="31.0" prefWidth="85.0" text="True option">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="trueText" layoutX="128.0" layoutY="346.0" prefHeight="37.0" prefWidth="452.0" promptText="Option number" />
+      <Button layoutX="386.0" layoutY="408.0" mnemonicParsing="false" onAction="#goDashboard" text="Dashboard" />
+   </children>
+</Pane>

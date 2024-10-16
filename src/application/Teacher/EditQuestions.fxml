@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="854.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditQuestionsController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="854.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="questionTable" layoutX="-2.0" layoutY="27.0" prefHeight="350.0" prefWidth="854.0">
+        <columns>
+          <TableColumn fx:id="qid" prefWidth="36.0" text="Qid" />
+          <TableColumn fx:id="que" prefWidth="399.0" text="Question" />
+          <TableColumn fx:id="ans1" prefWidth="84.0" text="Ans1" />
+          <TableColumn fx:id="ans2" prefWidth="78.0" text="Ans2" />
+          <TableColumn fx:id="ans3" prefWidth="79.0" text="Ans3" />
+          <TableColumn fx:id="ans4" prefWidth="66.0" text="Ans4" />
+          <TableColumn fx:id="trueans" prefWidth="34.0" text="True" />
+            <TableColumn fx:id="edit_col" prefWidth="77.0" text="edit" />
+        </columns>
+      </TableView>
+      <TextField fx:id="removeText" layoutX="228.0" layoutY="415.0" prefHeight="46.0" prefWidth="205.0" promptText="Remove Question" />
+      <Button layoutX="482.0" layoutY="426.0" mnemonicParsing="false" onAction="#removeQuestion" prefHeight="25.0" prefWidth="79.0" text="Remove" />
+      <Label layoutX="14.0" layoutY="415.0" prefHeight="46.0" prefWidth="190.0" text="Enter Qid to remove Question">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="683.0" layoutY="426.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="25.0" prefWidth="79.0" text="Dashboard" />
+   </children>
+</Pane>

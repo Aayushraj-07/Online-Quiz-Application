@@ -1,0 +1,187 @@
+
+* {
+	-color : #a5ff8c;
+	-white : #efefef;
+	-gray : #dfdfdf;
+	-darkGray : derive(-gray,-20%);
+	-black : #444444dd;
+	-abort : #e74c3c;
+}
+
+.root{
+	-fx-background-color : #bde8a7;
+	-fx-fill-width : true;
+	-fx-color : -color;
+	-fx-fill-height : true;
+	-fx-font-family: 'Segoe UI';
+	/* remove the ugly focus shade */
+	-fx-focus-color : transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+
+
+
+.label{
+	 -fx-text-fill : -black;
+ }
+
+
+.button {
+	-fx-background-color : -gray,-gray,-gray,-gray;
+}
+.button:default{
+	-fx-background-color : -color;
+}
+.button:cancel{
+	-fx-background-color : -abort;
+}
+
+.button:focused {
+	-fx-color : -darkGray;
+   -fx-background-color : -darkGray;
+   -fx-focus-color : -darkGray;
+}
+.button:hover {
+    -fx-color: -darkGray;
+	-fx-inner-border : -darkGray;
+	-fx-body-color : -darkGray;
+}
+
+.button:armed {
+    -fx-color: -white;
+}
+
+
+.toggle-button{
+	-fx-background-color : -gray;
+}
+
+.toggle-button:selected{
+	-fx-background-color : -darkGray;
+}
+
+.menu-button{
+	-fx-background-color : #ccefba;
+}
+
+.split-menu-button{
+	-fx-background-color : -gray;
+}
+
+.split-menu-button>*.label{
+	-fx-background-color : -gray;
+}
+
+.split-menu-button>*.arrow-button{
+	-fx-background-color : -gray;
+}
+
+
+
+
+/*
+ * **********
+ * MENU
+ * **********
+ * 
+ */
+.menu-bar{
+	-fx-background-color : #ccefba;
+}
+ 
+
+
+ 
+ 
+ /*
+ * **********
+ * RADIO BUTTONS
+ * **********
+ * 
+ */
+ .radio-button>*.radio{
+	-fx-background-color : -gray; 
+ }
+ 
+ .radio-button:selected>*.radio>*.dot{
+	 -fx-background-color : #1c09ef;
+ }
+ 
+/*
+ * **********
+ * Text fields / inputs
+ * **********
+ * 
+ */
+.text-field{
+	-fx-highlight-fill : -color;
+	-fx-highlight-text-fill : -white;
+}
+
+ 
+
+/*
+ * **********
+ * Titled Pane
+ * **********
+ * 
+ */
+
+
+
+/*
+ * **********
+ * Table
+ * **********
+ * 
+ */
+.table-view:row-selection{
+	-fx-background-color : -gray;
+}
+
+.table-view:row-selection>*.column-header-background{
+	-fx-background-color : -white;
+}
+
+.table-view>*.column-resize-line{
+	-fx-background-color : -black;
+}
+
+.table-view>*.column-header-background>*.nested-column-header>*.table-column{
+	-fx-background-color : -darkGray, -white;
+}
+
+.table-view>*.column-header-background>*.filler{
+	-fx-background-color : -darkGray, -gray;
+}
+
+.table-view>*.column-header-background>*.show-hide-columns-button{
+	-fx-background-color : -gray;
+}
+
+
+.tree-table-view:row-selection{
+	-fx-background-color : -gray;
+}
+
+.tree-table-view:row-selection>*.column-header-background{
+	-fx-background-color : -white;
+}
+
+.tree-table-view>*.column-resize-line{
+	-fx-background-color : -black;
+}
+
+.tree-table-view>*.column-header-background>*.nested-column-header>*.table-column{
+	-fx-background-color : -darkGray, -white;
+}
+
+.tree-table-view>*.column-header-background>*.filler{
+	-fx-background-color : -darkGray, -gray;
+}
+
+.tree-table-view>*.column-header-background>*.show-hide-columns-button{
+	-fx-background-color : -gray;
+}
+

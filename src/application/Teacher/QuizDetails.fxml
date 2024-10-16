@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizDetailsController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="26.0" layoutY="77.0" prefHeight="41.0" prefWidth="117.0" text="Total Time(seconds)" />
+      <Label layoutX="26.0" layoutY="164.0" prefHeight="35.0" prefWidth="117.0" text="Marks Per Question" />
+      <Label layoutX="26.0" layoutY="241.0" prefHeight="35.0" prefWidth="117.0" text="Negative Marks" />
+      <TextField fx:id="timeText" layoutX="187.0" layoutY="85.0" promptText="time" />
+      <TextField fx:id="markText" layoutX="187.0" layoutY="169.0" prefHeight="25.0" prefWidth="149.0" promptText="marks" />
+      <TextField fx:id="nmarkText" layoutX="187.0" layoutY="246.0" promptText="negative" />
+      <Button layoutX="187.0" layoutY="318.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="25.0" prefWidth="64.0" text="Save" />
+      <Button layoutX="403.0" layoutY="318.0" mnemonicParsing="false" onAction="#goDashboard" text="Dashboard" />
+   </children>
+</Pane>
